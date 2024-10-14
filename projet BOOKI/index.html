@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -24,70 +25,76 @@
     <div class="main-container">
       <header>
         <div class="nav">
-          <img
-            src="images/logo/Booki.png"
-            alt="Logo Booki"
-            width="69"
-            height="19"
-          />
+          <img src="images/logo/Booki.png" alt="Logo Booki" />
 
           <div class="link">
-            <a href="">Hébergements</a>
-            <a href="">Activités</a>
+            <a href="#hebergements">Hébergements</a>
+            <a href="#activites">Activités</a>
           </div>
         </div>
       </header>
 
       <main>
-        <div class="introduction">
-          <h2 class="intro-subtitle1">
-            Trouvez votre hébergement pour des vacances de rêves
-          </h2>
-          <p class="intro-subtitle2">
-            En plein centre-ville ou en pleine nature
+        <div class="prologue">
+          <div class="introduction">
+            <h2 class="intro-subtitle1">
+              Trouvez votre hébergement pour des vacances de rêves
+            </h2>
+            <p class="intro-subtitle2">
+              En plein centre-ville ou en pleine nature
+            </p>
+          </div>
+          <div class="barre-recherche">
+            <span id="location-icon" class="location-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+
+            <form action="" class="recherche">
+              <input type="text" value="Marseille, France" class="ville" />
+
+              <button class="button-rechercher">Rechercher</button>
+
+              <button class="loupe">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="section-critere">
+            <span>Filtres</span>
+            <div class="deux-criteres">
+              <div class="filtre-critere">
+                <i class="fa-solid fa-money-bill"></i>
+                <a href="#">Économique</a>
+              </div>
+
+              <div class="filtre-critere">
+                <i class="fa-solid fa-person"></i>
+                <a href="#">Famille</a>
+              </div>
+            </div>
+
+            <div class="deux-criteres">
+              <div class="filtre-critere">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#">Romantique</a>
+              </div>
+
+              <div class="filtre-critere">
+                <i class="fa-solid fa-fire"></i>
+                <a href="#">Nos pépites</a>
+              </div>
+            </div>
+          </div>
+
+          <p class="subtitle">
+            <img src="images/signe/info.png" alt="info" />Plus de 500 logements
+            dans cette ville
           </p>
         </div>
 
-        <form action="" class="recherche">
-          <img
-            src="images/signe/Vector.png"
-            alt="localisation"
-            class="location"
-          />
-          <input type="text" value="Marseille, France" />
-          <button>Rechercher</button>
-        </form>
-
-        <div class="section-filtre">
-          <p>Filtres</p>
-          <div class="filtre-critere">
-            <img src="images/signe/money.png" alt="economique" />
-            <a href="#">Économique</a>
-          </div>
-
-          <div class="filtre-critere">
-            <img src="images/signe/famille.png" alt="famille" />
-            <a href="#">Famille</a>
-          </div>
-
-          <div class="filtre-critere">
-            <img src="images/signe/star.png" alt="star" />
-            <a href="#">Romantique</a>
-          </div>
-
-          <div class="filtre-critere">
-            <img src="images/signe/fire.png" alt="fire" />
-            <a href="#">Nos pépites</a>
-          </div>
-        </div>
-
-        <p class="subtitle">
-          <img src="images/signe/info.png" alt="info" />Plus de 500 logements
-          dans cette ville
-        </p>
-
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
+          <section class="hebergements" id="hebergements">
             <div class="hebergements-title">
               <h2 class="section-title">Hébergements à Marseille</h2>
             </div>
@@ -438,7 +445,8 @@
             </div>
           </section>
         </div>
-        <div class="activites">
+
+        <div class="activites" id="activites">
           <div class="activites-title">
             <h2>Activités à Marseille</h2>
           </div>
@@ -494,6 +502,7 @@
           </div>
         </div>
       </main>
+
       <footer>
         <div class="epilogue">
           <div class="a-propos">
@@ -506,13 +515,13 @@
             <h3>Nos hébergements</h3>
             <p>Charte qualité</p>
             <p>Proposer votre hôtel</p>
-            <p class="vide">haha</p>
+            <p class="vide">vide</p>
           </div>
           <div class="assistance">
             <h3>Assistance</h3>
             <p>Centre d'aide</p>
             <p>Nous contacter</p>
-            <p class="vide">haha</p>
+            <p class="vide">vide</p>
           </div>
         </div>
       </footer>
